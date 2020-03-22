@@ -37,6 +37,7 @@ public class IndexController {
                     User user = userMapper.findByToken(token);
                     if (user != null) {
                         //进入index页面 如果查到有登陆过 那么新建session
+                        System.out.println(request.getSession().getId());
                         request.getSession().setAttribute("user", user);
                     }
                     break;
