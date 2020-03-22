@@ -35,7 +35,7 @@
                            aria-expanded="false" th:text="${session.user.getName()}"><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="/profile/questions">我的问题</a></li>
-                            <li><a href="#">退出登录</a></li>
+                            <li><a href="/logout">退出登录</a></li>
                         </ul>
                     </li>
                     <li th:if="${session.user==null}"><a href="https://github.com/login/oauth/authorize?client_id=5247d482414aa610ce23&redirect_uri=http://localhost:8080/callback&scope=user&state=2">登录</a></li>
